@@ -171,7 +171,7 @@ class ResearchAgent(BaseAgent):
             )
         elif phase == "paper lineage":
             phase_str = (
-                "Your task is to read the paper and identify the 5 most relevant papers from its references that help in understanding the paper's contributions, including the proposed model architecture, experimental settings, and other details. These papers need to be in the same research field as the ones that need to be replicated."
+                "Your task is to read the paper and identify the 3 most relevant papers from its references that help in understanding the paper's contributions, including the proposed model architecture, experimental settings, and other details. These papers need to be in the same research field as the ones that need to be replicated."
                 "You need to infer the most relevant related works based on the information such as the position and name of the reference. Imoratantly, the name of the paper should be correct, do not generate mismatched name."
                 "The selected papers must come from the references and be specific to the same research field as the paper, avoiding commonly cited works like 'Attention Is All You Need'. Return the related works in the format: ['paper name 1', 'paper name 2', ...] with only paper names (author names should not be included)."
                 "You should search the paper from then references section, do not generate name by yourself. Also do not add the paper in the instructions."
